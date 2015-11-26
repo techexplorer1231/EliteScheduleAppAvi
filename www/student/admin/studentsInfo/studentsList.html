@@ -1,0 +1,9 @@
+<ion-view ng-controller="studentDetailsController as vm" view-title="Students List">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="student in vm.listOfStudents" href="#/app/studentsList/{{student.$id}}" on-tap="vm.getStudentData(student.$id)">
+        <div>{{student.name}}</div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

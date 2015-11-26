@@ -1,0 +1,60 @@
+<ion-side-menus enable-menu-with-back-views="false">
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-calm">
+      <ion-nav-back-button>
+      </ion-nav-back-button>
+
+      <ion-nav-buttons side="left">
+        <button class="button button-icon button-clear button-dark ion-navicon" menu-toggle="left">
+        </button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+    <ion-nav-view name="menuContent"></ion-nav-view>
+  </ion-side-menu-content>
+
+  <ion-side-menu side="left">
+    <!--<ion-header-bar class="bar-stable">
+      <h1 class="title">Student</h1>
+
+    </ion-header-bar>-->
+    <!--<ion-content style="background-image: url(img/bruceLee.jpg);">-->
+    <ion-content>
+      <ion-list>
+        <ion-item class="item-remove-animate item-avatar item-icon-right" style="background-color:purple; height: 100px;">
+          <img style="width:100%" class="full-image" src="img/adam.jpg">
+          <h3 style="color: #e5e5e5;width:100%;">{{asdf}}</h3>
+        </ion-item>
+        <ion-item menu-close ng-click="login()">
+          <i class="icon ion-log-in">  Login</i>
+        </ion-item>
+        <ion-item menu-close href="#/app/studentsList">
+          Admin
+        </ion-item>
+        <ion-item menu-close href="#/app/idCard">
+          <i class="icon ion-card">  ID Card</i>
+        </ion-item>
+        <ion-item menu-close href="#/app/payFees">
+          <i class="icon ion-cash">  Pay Fees</i>
+        </ion-item>
+        <ion-item menu-close href="#/app/attendance">
+          Attendance
+        </ion-item>
+        <ion-item menu-close href="#/app/markAttendance">
+          Mark Attendance
+        </ion-item>
+        <ion-item menu-close href="#/app/history">
+          History
+        </ion-item>
+        <ion-item menu-close href="#/app/notifications">
+          <i class="icon ion-android-notifications">  Notifications</i>
+        </ion-item>
+        <ion-item menu-close href="#/app/chats">
+          Chats
+        </ion-item>
+        <ion-item menu-close href="#/app/playlists">
+          Playlist
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+</ion-side-menus>
